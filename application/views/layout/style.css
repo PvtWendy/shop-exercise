@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+    gap: 2vw;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: gray;
+}
