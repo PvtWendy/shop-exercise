@@ -1,4 +1,8 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="globals.css">
+    </head>
 <body>
     <?php
     require_once "../application/core/autoload.php";
