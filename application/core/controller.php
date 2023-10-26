@@ -17,7 +17,7 @@ class controller
     }
     public function pageNotFound()
     {
-        $this->view('error404');
+        $this->view('404/index');
     }
 
 }

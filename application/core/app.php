@@ -27,7 +27,7 @@ class app
     private function getControllerFromUrl($url)
     {
         if (!empty($url[0]) && isset($url[0])) {
-            if (file_exists('../application/controllers' . $url . 'Controller.php')) {
+            if (file_exists('../application/controllers' . $url[0] . 'Controller.php')) {
                 $this->controller = $url . 'Controller';
             } else {
                 $this->page404 = true;

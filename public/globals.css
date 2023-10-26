@@ -1,18 +1,34 @@
-nav{
+body{
+    margin: 0;
+}
+/*Top Nav*/
+.topNav{
     display: flex;
     gap: 3vw;
 }
 
-nav a{
+.topNav a{
     text-decoration: none;
+    color: cornflowerblue;
+}
+.topNav a:visited{
+    color: cornflowerblue;
+}
+.topNav a:hover{
+    color: gray;
+}
+/*404 Page*/
+
+.errorPage{
+    background-color: #0078D7;
+    color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
-nav a{
-    color: cornflowerblue;
+.errorPage b{
+    font-size: 150px;
 }
-nav a:visited{
-    color: cornflowerblue;
-}
-nav a:hover{
-    color: gray;
+.errorPage h1{
+    margin: 0;
 }

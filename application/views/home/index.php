@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="../globals.css">
 </head>
 
 <body>
-    <?php include "../application/views/layout/menu.php"; ?>
+    <?php
+    $base = __DIR__;
+    include $base . "/../layout/menu.php"; ?>
 </body>
 
 </html>
