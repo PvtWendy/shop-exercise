@@ -11,8 +11,8 @@
 
 <body>
     <?php
-    $base = __DIR__;
-    include $base . "/../layout/menu.php"; ?>
+    $componentDir = $_SERVER["DOCUMENT_ROOT"] . "/components/";
+    include $componentDir . "menu.php"; ?>
 </body>
 
 </html>
