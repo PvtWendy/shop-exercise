@@ -22,13 +22,58 @@ body{
 .errorPage{
     background-color: #0078D7;
     color: white;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
+    display: flex;
+    padding: 0 20vw;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Consolas";
 }
 
 .errorPage b{
-    font-size: 150px;
+    font-size: 10vw;
+    font-weight: 100;
+}
+.errorPage p{
+    font-size: 1.5vw;
+    width: 60vw;
+    margin-bottom: 2.5vw;
 }
 .errorPage h1{
+    font-size: 2vw;
     margin: 0;
+}
+.errorPage div{
+    margin-top: 5vw;
+    display: flex;
+}
+.errorPage div section{
+    margin-left: 1vw;
+    height: 10vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.errorPage div img{
+    width: 10vw;
+}
+
+.errorPage div a{
+    color: white;
+    text-decoration: none;
+}
+.errorPage div a:hover{
+    color: gainsboro;
+}
+.errorPage div a:visited{
+    color: white;
+}
+.errorPage div p{
+    margin: 1vw 0;
+    font-size: 1vw
+}
+.errorPage div p:first-of-type{
+    margin: 0;
+    font-size: 1vw;
+    margin-bottom: 5vw;
 }
