@@ -17,11 +17,11 @@
         <div>
             <img src="/images/Rickrolling_QR_code.png">
             <section>
-                <p>
+                <span>
                     For more information and possible fixes, please visit
                     <a href="https: //www.youtube.com/watch?v=dQw4w9WgXcQ">https://support.wendy.com/pt-br</a>
-                </p>
-                <p>If you call a support person plase give him this stop code:</p>
+                </span>
+                <p>If you call a support person plase give them this stop code:</p>
                 <p>ERROR_404_NOT_FOUND</p>
             </section>
 
