@@ -11,7 +11,7 @@
     <div class="errorPage">
         <b>:(</b>
         <p>Your webpage ran into an unexpected error and needs to restart,We're not collecting any error info, We're
-            giving you an error code and then you're on your on</p>
+            giving you an error code and then you're on your own</p>
         <h1>Error 404: File not found</h1>
 
         <div>
