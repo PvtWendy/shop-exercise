@@ -14,6 +14,9 @@
     <h1>
         Produto
     </h1>
+    <hr>
+    <a href="/product/register">Adicionar Produto</a>
+
 </body>
 
 </html>
