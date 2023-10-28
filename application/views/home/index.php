@@ -13,6 +13,7 @@
     <?php
     $componentDir = $_SERVER["DOCUMENT_ROOT"] . "/components/";
     include $componentDir . "menu.php"; ?>
+    <h1>Home</h1>
 </body>
 
 </html>
