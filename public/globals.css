@@ -34,6 +34,7 @@ body{
 .errorPage b{
     font-size: 10vw;
     font-weight: 100;
+    margin: 0;
 }
 .errorPage p{
     font-size: 1.5vw;
@@ -73,7 +74,10 @@ body{
     font-size: 1vw
 }
 .errorPage div p:first-of-type{
+    margin-top: 5.25vw;
+}
+.errorPage div span{
     margin: 0;
     font-size: 1vw;
-    margin-bottom: 5vw;
+
 }
