@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./globals.css">
-        <link rel="stylesheet" href="../globals.css">
-        <link rel="stylesheet" href="../../globals.css">
+        <link rel="stylesheet" href="/globals.css">
     </head>
 <body>
     <?php

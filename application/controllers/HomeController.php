@@ -1,7 +1,7 @@
 <?php
 use application\core\controller;
 
-class HomeController extends controller
+class homeController extends controller
 {
     public function index()
     {

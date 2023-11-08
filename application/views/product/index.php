@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="globals.css">
-    <link rel="stylesheet" href="../globals.css">
+    <title>Produto</title>
 </head>
 
 <body>
     <?php
     $componentDir = $_SERVER["DOCUMENT_ROOT"] . "/components/";
     include $componentDir . "menu.php"; ?>
-    <h1>Home</h1>
+    <h1>
+        Produto
+    </h1>
+    <hr>
+    <a href="/product/register">Adicionar Produto</a>
+
 </body>
 
 </html>
