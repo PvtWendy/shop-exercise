@@ -2,7 +2,7 @@
 
 namespace application\DAO;
 
-class connection
+class Connection
 {
     private $db = "shop";
     private $host = "localhost";
@@ -12,7 +12,7 @@ class connection
 
     private $conn;
 
-    public function __construct($host, $user, $password, $conn)
+    public function __construct()
     {
         $this->conn = new \mysqli($this->host, $this->user, $this->password, $this->db);
     }
