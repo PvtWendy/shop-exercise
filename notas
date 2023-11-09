@@ -3,7 +3,7 @@ Atividades
 [ ] criar banco de dados da loja
 [X] criar a estrutura de pastas do projeto
 [X] adicionar o framework de css*
-[ ] criar classe de conexão com o banco de dados
+[X] criar classe de conexão com o banco de dados
 [ ] criar uma classe da camada DAO (ProdutoDAO)
 [X] criar a classe de modelo (Produto)
 [X] criar o core (nucleo da aplicacao);
