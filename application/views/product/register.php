@@ -12,14 +12,10 @@
     <form action="/product/submit" method="POST">
         <label for="product_name">Name:</label>
         <input type="text" name="product_name">
-        <label for="product_seller">Seller:</label>
-        <input type="text" name="product_seller">
+        <label for="product_brand">Brand:</label>
+        <input type="text" name="product_brand">
         <label for="product_price">Price:</label>
         <input type="text" name="product_price">
-        <label for="product_review">Review Score:</label>
-        <input type="text" name="product_review">
-        <label for="product_desc">Description:</label>
-        <input type="text" name="product_desc">
         <input type="submit" value="Submit">
     </form>
 </body>

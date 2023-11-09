@@ -1,4 +1,6 @@
 <?php
+use application\models\product;
+use application\DAO\ProductDAO;
 use application\core\controller;
 
 class productController extends controller
@@ -14,11 +16,12 @@ class productController extends controller
 
     public function submit(){
         $name = $_POST["product_name"];
-        $seller = $_POST["product_seller"];
+        $brand = $_POST["product_brand"];
         $price = $_POST["product_price"];
-        $score = $_POST["product_review"];
-        $desc = $_POST["product_desc"];
-        print_r($name);
-    }
+        $product = new product($name,$brand,$price);
+
+        $productDAO = new ProductDAO();
+        $productDAO->save($product);
+        }
 }
 ?>
