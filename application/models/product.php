@@ -1,7 +1,7 @@
 <?php 
 
 class Product {
-    private $cod;
+    private $code;
     private $name;
     private $brand;
     private $price;
@@ -13,12 +13,12 @@ class Product {
         $this->price = $price;
     }
 
-    public function setCod($cod) {
-        $this->cod = $cod;
+    public function setCod($code) {
+        $this->code = $code;
     }
 
-    public function getCod() {
-        return $this->cod;
+    public function getCode() {
+        return $this->code;
     }
 
     public function getName() {
