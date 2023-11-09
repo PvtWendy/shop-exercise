@@ -10,7 +10,7 @@ class ProductDAO {
         $brand = $product->getBrand();
         $price = $product->getPrice();
 
-        $SQL= "INSERT INTO products (name,brand,price)   VALUES ($name, $brand, $price)";
+        $SQL= "INSERT INTO products (name,brand,price)   VALUES ('$name', '$brand', $price)";
         if($conn->query( $SQL ) === true){
             return true;
         }else{
