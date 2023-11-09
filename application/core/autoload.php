@@ -10,7 +10,7 @@ spl_autoload_register(function($filename){
     if(file_exists($file)) :
         require $file;
     else:
-        echo 'Erro ao importar o arquivo';
+        echo 'Error: Failed to import file';
     endif;
 });
 ?>

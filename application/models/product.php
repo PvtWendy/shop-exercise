@@ -1,5 +1,5 @@
 <?php 
-
+namespace application\models;
 class Product {
     private $code;
     private $name;
@@ -22,7 +22,7 @@ class Product {
     }
 
     public function getName() {
-        return $this->name;
+        return '"'. $this->name .'"';
     }
 
     public function setName($name){
@@ -30,7 +30,7 @@ class Product {
     }
 
     public function getBrand() {
-        return $this->brand;
+        return '"'. $this->brand .'"';
     }
 
     public function setBrand($brand){
