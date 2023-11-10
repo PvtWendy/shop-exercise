@@ -15,7 +15,7 @@
         Produto
     </h1>
     <hr>
-    <a href="/product/register">Adicionar Produto</a>
+    <a href="/product/register">Add Product</a>
 
 </body>
 
