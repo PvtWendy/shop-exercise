@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <form action="/product/submit" method="POST">
+    <form action="/product/submit" method="POST" class="productForm">
         <label for="product_name">Name:</label>
         <input type="text" name="product_name">
         <label for="product_brand">Brand:</label>
         <input type="text" name="product_brand">
         <label for="product_price">Price:</label>
         <input type="text" name="product_price">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submitButton">
     </form>
 </body>
 

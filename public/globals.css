@@ -19,6 +19,33 @@ body{
     background-color: lightgray;
 }
 
+/*Product Form*/
+
+.productForm{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto;
+}
+
+.productForm input{
+    padding: 10px 15px;
+    font-size: large;
+    border-radius: 10px;
+}
+
+#submitButton{
+    width: 20%;
+    margin: 20px auto;
+    background-color:darkseagreen;
+    border: 0px solid;
+    color: white;
+}
+
+#submitButton:hover{
+    background-color: darkolivegreen;
+    cursor: pointer;
+}
 
 /*404 Page*/
 
