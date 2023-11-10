@@ -4,18 +4,19 @@ body{
 /*Top Nav*/
 .topNav{
     display: flex;
-    gap: 3vw;
 }
 
 .topNav a{
     text-decoration: none;
     color: cornflowerblue;
+    padding: 20px 30px;
 }
 .topNav a:visited{
     color: cornflowerblue;
 }
 .topNav a:hover{
-    color: gray;
+    color: black;
+    background-color: lightgray;
 }
 
 
