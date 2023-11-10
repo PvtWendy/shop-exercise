@@ -1,8 +1,12 @@
-<?php 
+<?php
 namespace application\DAO;
-class ProductDAO {
+
+use application\models\Product;
+class ProductDAO
+{
     //Create
-    public function save($product){
+    public function save($product)
+    {
         $connection = new Connection();
         $conn = $connection->connect();
 
@@ -10,24 +14,54 @@ class ProductDAO {
         $brand = $product->getBrand();
         $price = $product->getPrice();
 
-        $SQL= "INSERT INTO products (name,brand,price)   VALUES ('$name', '$brand', $price)";
-        if($conn->query( $SQL ) === true){
+        $SQL = "INSERT INTO products (name,brand,price)   VALUES ('$name', '$brand', $price)";
+        if ($conn->query($SQL) === true) {
             return true;
-        }else{
-            echo "Error: ". $SQL . "<br/>" . $conn->error;
+        } else {
+            echo "Error: " . $SQL . "<br/>" . $conn->error;
             return false;
         }
-    }
-    public function getAll(){}
 
-    //Retrieve
-    public function getById($id){}
+    }
+    public function getAll()
+    {
+
+        $connection = new Connection();
+
+        $conn = $connection->connect();
+
+        $SQL = "SELECT * FROM products";
+
+        $result = $conn->query($SQL);
+
+        $products = [];
+        while ($row = $result->fetch_assoc()) {
+            $products = new Product($row["name"], $row["brand"], $row["price"]);
+            $products->setCode($row["code"]);
+            array_push($products, $products);
+
+
+        }
+        return $products;
+    }
+    public function getProductById($id)
+    {
+        //Retrieve
+
+    }
+    public function getById($id)
+    {
+    }
 
     //update
-    public function update($product){}
+    public function update($product)
+    {
+    }
 
     //delete
-    public function delete($id){}
+    public function delete($id)
+    {
+    }
 
 }
 

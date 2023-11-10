@@ -22,6 +22,8 @@ class productController extends controller
 
         $productDAO = new ProductDAO();
         $productDAO->save($product);
+
+        $this->view("product/register");
         }
 }
 ?>

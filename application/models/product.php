@@ -13,7 +13,7 @@ class Product {
         $this->price = $price;
     }
 
-    public function setCod($code) {
+    public function setCode($code) {
         $this->code = $code;
     }
 
