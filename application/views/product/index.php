@@ -33,7 +33,7 @@
             <?php } ?>
         </tbody>
     </table>
-    <a href="/product/register">Add Product</a>
+    <a href="/product/register" class="button">Add Product</a>
 
 </body>
 

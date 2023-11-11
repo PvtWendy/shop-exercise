@@ -62,6 +62,23 @@ body{
     border-radius: 2px;
 }
 
+
+/*Buttons*/
+
+.button{
+    margin: 20px auto;
+    background-color:darkseagreen;
+    border: 0px solid;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: darkolivegreen;
+    cursor: pointer;
+}
 /*404 Page*/
 
 .errorPage{
