@@ -61,13 +61,13 @@ class ProductDAO
 
 
     }
-    public function getById($id)
-    {
-    }
 
     //update
     public function update($product)
     {
+        $connection = new Connection();
+        $conn = $connection->connect();
+        
     }
 
     //delete

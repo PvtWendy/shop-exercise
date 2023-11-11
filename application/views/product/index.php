@@ -21,6 +21,7 @@
             <th>Name</th>
             <th>Brand</th>
             <th>Price</th>
+            <th>Action</th>
         </thead>
         <tbody>
             <?php foreach ($data["products"] as $products) { ?>   
@@ -29,6 +30,7 @@
                     <td><?= $products->getName()?></td>
                     <td><?= $products->getBrand()?></td>
                     <td><?= $products->getPrice()?></td>
+                    <td><a href="/product/startUpdate/<?= $products->getCode() ?>">Edit</a></td>
                 </tr>
             <?php } ?>
         </tbody>

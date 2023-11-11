@@ -27,5 +27,13 @@ class productController extends controller
 
         $this->view("product/register");
         }
+
+
+    public function startUpdate($code)
+    {
+        $productDAO = new ProductDAO();
+        $product = $productDAO->getProductById($code);
+        $this->view("product/update", ["product"=> $product]);
+    }
 }
 ?>
