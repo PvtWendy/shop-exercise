@@ -37,9 +37,9 @@ class ProductDAO
 
         $products = [];
         while ($row = $result->fetch_assoc()) {
-            $products = new Product($row["name"], $row["brand"], $row["price"]);
-            $products->setCode($row["code"]);
-            array_push($products, $products);
+            $product = new Product($row["name"], $row["brand"], $row["price"]);
+            $product->setCode($row["code"]);
+            array_push($products, $product);
 
 
         }

@@ -7,7 +7,9 @@ class productController extends controller
 {
     public function index()
     {
-        $this->view('product/index');
+        $productDAO = new ProductDAO();
+        $products = $productDAO->getAll();
+        $this->view('product/index', ["products" => $products]);
     }
 
     public function register(){
