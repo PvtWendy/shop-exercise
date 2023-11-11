@@ -2,6 +2,7 @@
 namespace application\DAO;
 
 use application\models\Product;
+
 class ProductDAO
 {
     //Create
@@ -46,7 +47,18 @@ class ProductDAO
     }
     public function getProductById($id)
     {
-        //Retrieve
+        $connection = new Connection();
+
+        $conn = $connection->connect();
+
+        $SQL = "SELECT * FROM products where id = ". $id;
+
+        $result = $conn->query($SQL);
+        $row = $result->fetch_assoc();
+        $product = new Product($row["name"], $row["brand"],$row["price"]);
+        $product->setCode($row["code"]);
+        return $product;
+
 
     }
     public function getById($id)
