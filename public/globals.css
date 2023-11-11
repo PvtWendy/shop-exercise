@@ -47,6 +47,16 @@ body{
     cursor: pointer;
 }
 
+/*Product Table*/
+
+.productTables{
+    border: 1px solid black;
+}
+
+.productTables th,td{
+    border: 1px solid black;
+}
+
 /*404 Page*/
 
 .errorPage{
