@@ -51,11 +51,11 @@ class ProductDAO
 
         $conn = $connection->connect();
 
-        $SQL = "SELECT * FROM products WHERE code = ". $id;
+        $SQL = "SELECT * FROM products WHERE code = " . $id;
 
         $result = $conn->query($SQL);
         $row = $result->fetch_assoc();
-        $product = new Product($row["name"], $row["brand"],$row["price"]);
+        $product = new Product($row["name"], $row["brand"], $row["price"]);
         $product->setCode($row["code"]);
         return $product;
 
@@ -74,7 +74,7 @@ class ProductDAO
         $price = $product->getPrice();
 
         $SQL = "UPDATE products SET name = '$name', brand = '$brand', price = $price WHERE code = $code ";
-        
+
         if ($conn->query($SQL) === true) {
             return true;
         } else {
@@ -84,8 +84,16 @@ class ProductDAO
     }
 
     //delete
-    public function delete($id)
+    public function delete()
     {
+        $id = $_POST["product_code"];
+        $connection = new Connection();
+        $conn = $connection->connect();
+        $sql = "DELETE FROM product WHERE code =". $id;
+
+
+
+        
     }
 
 }
