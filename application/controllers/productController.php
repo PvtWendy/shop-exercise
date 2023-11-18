@@ -12,28 +12,46 @@ class productController extends controller
         $this->view('product/index', ["products" => $products]);
     }
 
-    public function register(){
+    public function register()
+    {
         $this->view("product/register");
     }
 
-    public function submit(){
+    public function submit()
+    {   
+        $code = $_POST["product_code"];
         $name = $_POST["product_name"];
         $brand = $_POST["product_brand"];
         $price = $_POST["product_price"];
-        $product = new product($name,$brand,$price);
+        $product = new product($name, $brand, $price);
 
         $productDAO = new ProductDAO();
         $productDAO->save($product);
 
         $this->view("product/register");
-        }
+    }
 
 
     public function startUpdate($code)
     {
         $productDAO = new ProductDAO();
         $product = $productDAO->getProductById($code);
-        $this->view("product/update", ["product"=> $product]);
+
+        $this->view("product/update", ["product" => $product]);
+    }
+    public function submitUpdate()
+    {
+        $code = $_POST["product_code"];
+        $name = $_POST["product_name"];
+        $brand = $_POST["product_brand"];
+        $price = $_POST["product_price"];
+        $product = new product($name, $brand, $price);
+
+        $productDAO = new ProductDAO();
+        $productDAO->update($product,$code);
+
+        $this->view("product/register");
     }
 }
+
 ?>
