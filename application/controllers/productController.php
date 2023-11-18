@@ -46,9 +46,10 @@ class productController extends controller
         $brand = $_POST["product_brand"];
         $price = $_POST["product_price"];
         $product = new product($name, $brand, $price);
+        $product->setCode($code);
 
         $productDAO = new ProductDAO();
-        $productDAO->update($product,$code);
+        $productDAO->update($product);
 
         $this->view("product/register");
     }

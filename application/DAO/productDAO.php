@@ -63,11 +63,12 @@ class ProductDAO
     }
 
     //update
-    public function update($product,$code)
+    public function update($product)
     {
         $connection = new Connection();
         $conn = $connection->connect();
-        
+
+        $code = $product->getCode();
         $name = $product->getName();
         $brand = $product->getBrand();
         $price = $product->getPrice();
