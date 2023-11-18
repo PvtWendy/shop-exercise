@@ -12,7 +12,7 @@ Atividades
      [X] criar o autoload (carrega os arquivos na memoria)
 [X] criar o HomeController (carregar a index)
 [X] criar o ProdutoController (controla as operacoes de produto)
-[ ] Funcionalidade Excluir Produto
+[] Funcionalidade Excluir Produto
 [ ] CRUD Usuário [2.0]
      [ ] Cadastrar Usuário
      [ ] Pesquisar Usuário
@@ -21,5 +21,6 @@ Atividades
 [ ] Efetuar Login/Logout do Usuário [1.0]
 [ ] Listar Produtos Na pagina inicial [1.0]
 [ ] Listar Produtos com Imagem [2.0] 
-
+[ ] Adicionar o Modal de Confirmação de Exclusão no projeto[1.0]
+[ ] Refatorar o ProdutoDAO com PreparedStatement ou PDO[1.0]
 *CSS puro foi utilizado
