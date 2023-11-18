@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <?php
+    $componentDir = $_SERVER["DOCUMENT_ROOT"] . "/components/";
+    include $componentDir . "menu.php"; ?>
     <form action="/product/submit" method="POST" class="productForm">
         <label for="product_name">Name:</label>
         <input type="text" name="product_name">

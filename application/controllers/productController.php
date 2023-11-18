@@ -51,7 +51,7 @@ class productController extends controller
         $productDAO = new ProductDAO();
         $productDAO->update($product);
 
-        $this->view("product/register");
+        $this->view("product/update", ["product" => $product]);
     }
 }
 
