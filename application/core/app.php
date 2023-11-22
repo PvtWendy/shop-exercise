@@ -17,7 +17,6 @@ class app
         $this->getParamsFromUrl($URL_ARRAY);
         
         call_user_func_array([$this->controller, $this->method], $this->params);
-        var_dump($URL_ARRAY);
     }
 
     private function parseUrl()
