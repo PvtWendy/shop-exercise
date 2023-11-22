@@ -19,7 +19,6 @@ class productController extends controller
 
     public function submit()
     {   
-        $code = $_POST["product_code"];
         $name = $_POST["product_name"];
         $brand = $_POST["product_brand"];
         $price = $_POST["product_price"];
