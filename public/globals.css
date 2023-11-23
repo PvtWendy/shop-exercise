@@ -4,8 +4,12 @@ body{
 /*Top Nav*/
 .topNav{
     display: flex;
+    justify-content: space-between;
 }
 
+.topNav div{
+    padding: 20px 0;
+}
 .topNav a{
     text-decoration: none;
     color: cornflowerblue;
@@ -18,6 +22,7 @@ body{
     color: black;
     background-color: lightgray;
 }
+
 
 /*Product Form*/
 
