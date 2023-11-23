@@ -12,13 +12,13 @@
     <?php
     $componentDir = $_SERVER["DOCUMENT_ROOT"] . "/components/";
     include $componentDir . "menu.php"; ?>
-    <form action="/product/submit" method="POST" class="productForm">
+    <form action="/user/sendSignup" method="POST" class="productForm">
         <label for="user_name">Name:</label>
         <input type="text" name="user_name">
         <label for="user_password">Password:</label>
-        <input type="text" name="user_password  ">
+        <input type="password" name="user_password">
         <label for="user_confirmation">Confirm Password:</label>
-        <input type="text" name="user_confirmation  ">
+        <input type="password" name="user_confirmation">
         <label for="user_number">Phone Number:</label>
         <input type="text" name="user_number">
         <label for="user_address">Address:</label>

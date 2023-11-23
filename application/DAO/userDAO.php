@@ -6,7 +6,7 @@ use application\models\User;
 class UserDAO
 {
     //Create
-    public function save($user)
+    public function signup($user)
     {
         $connection = new Connection();
         $conn = $connection->connect();
@@ -16,7 +16,7 @@ class UserDAO
         $address = $user->getAddress();
         $password = $user->getPassword();
 
-        $SQL = "INSERT INTO products (name,number,address,password)   VALUES ('$name', '$number', $'address', 'password' )";
+        $SQL = "INSERT INTO users (name,number,address,password) VALUES ('$name', '$number', '$address', '$password' )";
         if ($conn->query($SQL) === true) {
             return true;
         } else {
