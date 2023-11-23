@@ -90,10 +90,6 @@ class ProductDAO
         $connection = new Connection();
         $conn = $connection->connect();
         $sql = "DELETE FROM product WHERE code =". $id;
-
-
-
-        
     }
 
 }
