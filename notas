@@ -4,7 +4,7 @@ Atividades
 [X] criar a estrutura de pastas do projeto
 [X] adicionar o framework de css*
 [X] criar classe de conexão com o banco de dados
-[ ] criar uma classe da camada DAO (ProdutoDAO)
+[X] criar uma classe da camada DAO (ProdutoDAO)
 [X] criar a classe de modelo (Produto)
 [X] criar o core (nucleo da aplicacao);
      [X] criar App.php(carrega os controles)
@@ -12,9 +12,9 @@ Atividades
      [X] criar o autoload (carrega os arquivos na memoria)
 [X] criar o HomeController (carregar a index)
 [X] criar o ProdutoController (controla as operacoes de produto)
-[] Funcionalidade Excluir Produto
+[ ] Funcionalidade Excluir Produto
 [ ] CRUD Usuário [2.0]
-     [ ] Cadastrar Usuário
+     [X] Cadastrar Usuário
      [ ] Pesquisar Usuário
      [ ] Alterar Usuário
      [ ] Excluir Usuário
