@@ -5,6 +5,7 @@ body{
 .topNav{
     display: flex;
     justify-content: space-between;
+    padding-right: 30px;
 }
 
 .topNav div{
@@ -23,6 +24,31 @@ body{
     background-color: lightgray;
 }
 
+.topNav div a{
+    padding: 20px 30px;
+    margin: 0 5px;
+}
+
+
+.topNav #loginButton{
+    padding: 10px 20px;
+    background-color: darkseagreen;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid;
+}
+.topNav #loginButton:hover{
+    background-color: darkolivegreen;
+    cursor: pointer;
+}
+.topNav #signupButton{
+    padding: 10px 20px; 
+    border-radius: 5px;
+    border: 1px solid;
+}
+.topNav #signupButton:hover{
+    cursor: pointer;
+}
 
 /*Product Form*/
 

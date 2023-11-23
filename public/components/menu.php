@@ -5,12 +5,12 @@
         <a href="#">Placeholder</a>
     </div>
     <div>
-        <button>
+        <a href="/user/login" id="loginButton">
             Login
-        </button>
-        <button>
+        </a>
+        <a href="/user/signup" id="signupButton">
             Signup
-        </button>
+        </a>
     </div>
 
 </nav>
