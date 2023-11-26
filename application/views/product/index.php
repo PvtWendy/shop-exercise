@@ -39,7 +39,7 @@
                         <?= $products->getPrice() ?>
                     </td>
                     <td>
-                        <a href="/product/startUpdate/">Edit</a>
+                        <a href="/product/startUpdate/<?= $products->getCode()?>">Edit</a>
                         <form action="/product/delete" method="post">
                             <input type="hidden" name="productCode" value="<?= $products->getCode() ?>">
                             <input type="hidden" name="productName" value="<?= $products->getName() ?>">
