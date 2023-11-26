@@ -28,6 +28,7 @@ class productController extends controller
         $productDAO->save($product);
 
         $this->view("product/register");
+        header("Location: /product/index");
     }
 
 
@@ -51,7 +52,18 @@ class productController extends controller
         $productDAO->update($product);
 
         $this->view("product/update", ["product" => $product]);
+        header("Location: /product/index");
     }
+    public function delete()
+{
+    $code = $_POST["productCode"];
+    $productDAO = new ProductDAO();
+    $productDAO->delete($code);
+
+    $this->view("product/index");
+    header("Location: /product/index");
+    exit();
+}
 }
 
 ?>
