@@ -16,6 +16,12 @@ class UserController extends Controller
         $this->view("user/signup");
     }
 
+    public function signout(){
+        session_destroy();
+        session_start();
+        header("Location: /home/index");
+    }
+
     public function sendSignup()
     {
         $name = $_POST["user_name"];
@@ -62,7 +68,10 @@ class UserController extends Controller
     {
         $userDAO = new UserDAO();
         $user = $userDAO->getById($_SESSION['user_id']);
-        $this->view("user/update", ["user" => $user]);
+    
+        if ($user) {
+            $this->view("user/update", ["user" => $user]);
+        }
     }
 
     public function submitUpdate()
@@ -71,13 +80,13 @@ class UserController extends Controller
         $name = $_POST["user_name"];
         $number = $_POST["user_number"];
         $address = $_POST["user_address"];
-        $oldPassword = $_POST["old_password"]; // Assuming you have a field for old password in your form
+        $oldPassword = $_POST["old_password"];
         $newPassword = $_POST["user_password"];
     
         $userDAO = new UserDAO();
         $user = $userDAO->getById($code);
     
-        if ($user && password_verify($oldPassword, $user->getPassword())) {
+        if ($user && $oldPassword === $user->getPassword()) {
             $user->setName($name);
             $user->setNumber($number);
             $user->setAddress($address);
