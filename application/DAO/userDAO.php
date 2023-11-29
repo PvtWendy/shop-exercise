@@ -34,7 +34,7 @@ class UserDAO
         $connection = new Connection();
         $conn = $connection->connect();
 
-        $SQL = "SELECT * FROM users WHERE id = ?";
+        $SQL = "SELECT * FROM users WHERE code = ?";
         $stmt = $conn->prepare($SQL);
         $stmt->bind_param("i", $id);
         $stmt->execute();
@@ -45,7 +45,7 @@ class UserDAO
         if ($user) {
             return new User($user["name"], $user["number"], $user["address"], $user["password"]);
         } else {
-            return null; // User not found
+            return null;
         }
     }
     // Login
@@ -65,7 +65,7 @@ class UserDAO
         if ($user && $password === $user["password"]) {
             $_SESSION['user_id'] = $user['code'];
             $_SESSION['user_name'] = $user['name'];
-            
+
             return true;
         } else {
             return false;
@@ -73,6 +73,7 @@ class UserDAO
     }
 
     // Update
+
     public function edit($user)
     {
         $connection = new Connection();
@@ -82,10 +83,11 @@ class UserDAO
         $name = $user->getName();
         $number = $user->getNumber();
         $address = $user->getAddress();
+        $password = $user->getPassword();
 
-        $SQL = "UPDATE users SET name = ?, number = ?, address = ? WHERE id = ?";
+        $SQL = "UPDATE users SET name = ?, number = ?, address = ?, password = ? WHERE code = ?";
         $stmt = $conn->prepare($SQL);
-        $stmt->bind_param("sssi", $name, $number, $address, $id);
+        $stmt->bind_param("ssssi", $name, $number, $address, $password, $id);
 
         if ($stmt->execute()) {
             return true;
@@ -95,6 +97,8 @@ class UserDAO
         }
     }
 
+
+
     // Delete
     public function delete()
     {
@@ -103,7 +107,7 @@ class UserDAO
 
         $id = $_SESSION['user_id'];
 
-        $SQL = "DELETE FROM users WHERE id = ?";
+        $SQL = "DELETE FROM users WHERE code = ?";
         $stmt = $conn->prepare($SQL);
         $stmt->bind_param("i", $id);
 
