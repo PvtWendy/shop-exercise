@@ -35,7 +35,6 @@ $fileLocation = $data["product"]->getFileLocation();
         <label for="product_price">Price:</label>
         <input type="text" name="product_price" value="<?= $price ?>">
         
-        <!-- Input for updating the image -->
         <label for="product_image">Update Image:</label>
         <input type="file" name="product_image">
 
