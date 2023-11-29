@@ -19,8 +19,8 @@ Atividades
      [X] Alterar Usuário
      [X] Excluir Usuário
 [X] Efetuar Login/Logout do Usuário [1.0]
-[ ] Listar Produtos Na pagina inicial [1.0]
-[ ] Listar Produtos com Imagem [2.0] 
+[X] Listar Produtos Na pagina inicial [1.0]
+[X] Listar Produtos com Imagem [2.0] 
 [X] Adicionar o Modal de Confirmação de Exclusão no projeto[1.0]
 [X] Refatorar o ProdutoDAO com PreparedStatement ou PDO[1.0]
 *CSS puro foi utilizado

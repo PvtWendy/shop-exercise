@@ -7,13 +7,40 @@
     <title>Home</title>
     <link rel="stylesheet" href="globals.css">
     <link rel="stylesheet" href="../globals.css">
+
 </head>
 
 <body>
     <?php
     $componentDir = $_SERVER["DOCUMENT_ROOT"] . "/components/";
-    include $componentDir . "menu.php"; ?>
-    <h1>Home</h1>
+    include $componentDir . "menu.php";
+    ?>
+    <div class="cardContainer">
+        <?php
+        foreach ($data["products"] as $product) {
+            ?>
+            <div class="productCard">
+                <?php if ($product->getFileLocation()): ?>
+                    <img src="<?= $product->getFileLocation() ?>" alt="<?= $product->getName() ?>" class="productImage">
+                <?php endif;
+                ?>
+                <h3>
+                    <?= $product->getName() ?>
+                </h3>
+                <p>Brand:
+                    <?= $product->getBrand() ?>
+                </p>
+                <p>Price:
+                    <?= $product->getPrice() ?>
+                </p>
+            </div>
+            <?php
+        }
+        ?>
+    </div>
+
+
+
 </body>
 
 </html>
